@@ -1,0 +1,27 @@
+@import 'mixins';
+@import 'variables';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: $browser-context;
+    
+    body {
+        font-family: $color-base;
+
+        section.about,
+        section.professional,
+        section.contato,
+        section.portfolio{
+            display: block;
+            padding: 20px 10px;
+        }
+
+    }
+}
+  

@@ -1,4 +1,6 @@
-# vue-projeto
+# Vue-Portfolio
+
+#DEV YURI ROLANDI
 
 ## Project setup
 ```

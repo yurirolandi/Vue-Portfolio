@@ -1,0 +1,28 @@
+@import '../../assets/scss/main.scss';
+
+.header {
+    display: block;
+    background-color: $color-base;
+
+    .header-menu{
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid $color-secundaria;
+
+        .header-conteudo{
+            list-style: none;
+            .header-item {
+                display: inline-block;
+                padding: 20px 5px;
+                a{
+                    padding: 20px 5px;
+                    color: $color-branca;
+                    text-decoration: none;
+                    &:hover{
+                        background-color: $color-secundaria;
+                    }
+                }
+            }
+        }
+    }
+}

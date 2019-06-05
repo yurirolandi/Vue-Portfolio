@@ -1,0 +1,28 @@
+@import '../../assets/scss/main.scss';
+
+.about {
+    .about-container{
+        display: flex;
+        justify-content: center;
+        background-color: $color-preto;
+
+        .about-titulo{
+            font-size: 1.8em;
+            color: $color-primaria;
+            padding-top: 5px;
+            border-bottom: 2px solid $color-base;
+        }
+
+        .about-conteudo{
+            .about-subtitulo{
+                font-size: 1.4em;
+                color: $color-branca;
+                margin-bottom: 10px;
+            }
+
+            .about-text{
+                text-align: left;
+            }
+        }
+    }
+}
