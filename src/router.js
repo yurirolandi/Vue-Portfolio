@@ -15,6 +15,11 @@ export default new Router({
       path: './components/Header',
       name: 'header',
       component: () => import('./components/Header/index.vue')
+    },
+    {
+      path: './components/About',
+      name: 'about',
+      component: () => import('./components/About/index.vue')
     }
     // {
     //   path: '/about',

@@ -15,11 +15,11 @@ html {
         font-family: $color-base;
 
         section.about,
+        section.inicial,
         section.professional,
         section.contato,
         section.portfolio{
             display: block;
-            padding: 20px 10px;
         }
 
     }
