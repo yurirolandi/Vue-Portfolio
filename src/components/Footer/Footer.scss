@@ -1,4 +1,43 @@
 @import '../../assets/scss/main.scss';
 .footer {
+    display: block;
+    background-color: $color-base;
+    height: 100px;
 
+    .footer-container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .footer-conteudo{
+            display: flex;
+            justify-content: center;
+            .footer-text{
+            color: $color-branca;
+                align-self: flex-end;
+            }
+        }
+
+        .social-media{
+            display: block;
+
+            .social-content{
+                list-style: none;
+
+                .social-item{
+                    display: inline-block;
+                    margin: 10px 15px;
+                    a{
+                        color: $color-branca;
+                        text-decoration: none;
+                        padding: 10px;
+
+                        &:hover{
+                            background-color: $color-secundaria;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
