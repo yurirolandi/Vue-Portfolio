@@ -25,6 +25,12 @@
                     &:hover{
                         background-color: $color-secundaria;
                     }
+
+                    i{
+                        color: $color-quaternaria;
+                        margin: 0 5px;
+                        font-size: 1.2em;
+                    }
                 }
             }
         }

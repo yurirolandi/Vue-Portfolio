@@ -1,4 +1,71 @@
 @import '../../assets/scss/main.scss';
+@import '../../assets/scss/_partial/_variables';
 .contato {
+    background-image: url('../../assets/img/contato.jpg');
+    background-repeat: no-repeat;
+    height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
 
+    .contato-form{
+        display: block;
+        text-align: center;
+        width: 85%;
+        font-family: roboto;
+        margin: 0 auto;
+        max-width: 500px;
+        background-color: $color-terciaria;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow:  0 0 20px $color-preto; 
+
+        .contato-titulo{
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 1.8em;
+        }
+
+        .contato-texto{
+            border: 1px solid $color-preto;
+            margin: 8px 0;
+            padding: 12px 18px;   
+            border-radius: 8px;
+
+            label{
+                display: block;
+                text-align: left;
+                border-bottom: 1px solid $color-base;
+                width: fit-content;
+                color: $color-base;
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+
+            input,
+            textarea{
+                width: 100%;
+                border: none;
+                background: none;
+                outline: none;
+                font-size: 18px;
+                margin-top: 6px;
+            }
+
+            textarea{
+                height: 100px;
+            }
+        }
+
+        .btn{
+            display: block;
+            background: $color-primaria;
+            cursor: pointer;
+            padding: 14px 0;
+            color: $color-branca;
+            text-transform: uppercase;
+            margin-top: 8px;
+            width: 100%;
+        }
+    }
 }

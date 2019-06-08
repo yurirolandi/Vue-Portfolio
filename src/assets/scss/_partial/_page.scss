@@ -12,14 +12,18 @@ html {
     font-size: $browser-context;
     
     body {
-        font-family: $color-base;
+        font-family: roboto;
 
         section.about,
         section.inicial,
         section.professional,
-        section.contato,
         section.portfolio{
             display: block;
+        }
+        section.contato{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
         }
 
     }

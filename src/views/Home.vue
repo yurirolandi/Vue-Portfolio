@@ -3,6 +3,7 @@
     <Header />
     <Inicial />
     <About />
+    <Contato />
     <Footer />
   </div>
 </template>
@@ -12,6 +13,7 @@
 import Header from '../components/Header/index.vue'
 import Inicial from '../components/Inicial/index.vue'
 import About from '../components/About/index.vue'
+import Contato from '../components/Contato/index.vue'
 import Footer from '../components/Footer/index.vue'
 
 
@@ -21,6 +23,7 @@ export default {
     Header,
     Inicial,
     About,
+    Contato,
     Footer
   }
 }

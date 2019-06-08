@@ -20,6 +20,11 @@ export default new Router({
       path: './components/About',
       name: 'about',
       component: () => import('./components/About/index.vue')
+    },
+    {
+      path: './components/About',
+      name: 'about',
+      component: () => import('./components/Contato/index.vue')
     }
     // {
     //   path: '/about',
