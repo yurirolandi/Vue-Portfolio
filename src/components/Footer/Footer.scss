@@ -1,4 +1,5 @@
 @import '../../assets/scss/main.scss';
+@import '../../assets/scss/_partial/_typography';
 .footer {
     display: block;
     background-color: $color-base;
@@ -13,8 +14,9 @@
             display: flex;
             justify-content: center;
             .footer-text{
-            color: $color-branca;
+                color: $color-branca;
                 align-self: flex-end;
+                font-family: Montserrat;
             }
         }
 
@@ -23,6 +25,7 @@
 
             .social-content{
                 list-style: none;
+                margin-top: 30px;
 
                 .social-item{
                     display: inline-block;
@@ -30,10 +33,19 @@
                     a{
                         color: $color-branca;
                         text-decoration: none;
-                        padding: 10px;
+                        padding: 8px;
+                        font-family: Montserrat;
+                        border: 2px solid $color-branca;
+                        border-radius: 13px;
+
+                        i{
+                            font-size: 20px;
+                            text-align: center;
+                        }
 
                         &:hover{
-                            background-color: $color-secundaria;
+                            background-color: $color-branca;
+                            color: $color-primaria;
                         }
                     }
                 }

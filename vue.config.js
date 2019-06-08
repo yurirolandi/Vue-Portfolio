@@ -6,6 +6,14 @@ module.exports = {
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
     types.forEach(type => addStyleResource(config.module.rule('stylus').oneOf(type)))
   },
+  
+  css: {
+      loaderOptions: {
+      sass: {
+        data: `@import "src/assets/scss/_partial/_typography";`
+      }
+    }
+  }
 }
 
 function addStyleResource (rule) {

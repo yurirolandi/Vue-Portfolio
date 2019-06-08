@@ -1,4 +1,5 @@
 @import '../../assets/scss/main.scss';
+@import '../../assets/scss/_partial/_variables';
 
 .header {
     display: block;
@@ -18,6 +19,7 @@
                 padding: 20px 5px;
                 a{
                     padding: 20px 5px;
+                    font-family: Montserrat;
                     color: $color-branca;
                     text-decoration: none;
                     &:hover{

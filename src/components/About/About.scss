@@ -13,7 +13,9 @@
             align-self: center;
             width: fit-content;
             margin-top: 25px;
+            padding: 10px;
             border-bottom: 2px solid $color-base;
+            font-family: Montserrat;
         }
     }
 
@@ -31,6 +33,7 @@
                 font-size: 1.2em;
                 color: $color-branca;
                 margin-bottom: 10px;
+                font-family: roboto;
             }
     
             .about-text{
@@ -38,6 +41,7 @@
                 text-align: left;
                 width: 70%;
                 color: $color-branca;
+                font-family: roboto;
             }
 
             .about-media{
@@ -56,11 +60,19 @@
                     cursor: pointer;
                     &:hover{
                         background-color: $color-base;
+                        color: $color-primaria;
                     }
 
                     a{
                         text-decoration: none;
-                        color: $color-quaternaria;
+                        color: $color-branca;
+                        font-family: Montserrat;
+
+                        i{
+                            font-size: 25px;
+                            color: $color-secundaria;
+                            margin: 0 10px 0 0;
+                        }
                     }
                 }
             }
@@ -71,14 +83,13 @@
     .about-skill{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         width: 600px;
-        margin-right: 50px;
 
         .skill-titulo{
             font-size: 1.5em;
             padding: 6px 0 10px 0;
             border-bottom: 4px solid $color-base;
+            font-family: roboto;
             width: fit-content;
             align-self: center;
             color: $color-branca;
@@ -88,90 +99,61 @@
         .skill-item{
             color: $color-branca;
             font-size: 1.1em;
-            margin: 10px;
+            align-self: center;
+            margin: 12px 10px 10px 10px;
+            font-family: roboto;
         }
 
+        .skill-box{
+            display: flex;
+            flex-wrap: wrap;
+            .skill-conteiner{
+                display: flex;
+                justify-content: space-between;
+                  
+                border: 2px solid $color-branca;
+                border-radius: 50px;
+                background-color: $color-base;
+                margin: 10px 5px 0 0;
+                width: 48%;
+    
+                .html-bar, 
+                .css-bar,
+                .js-bar,
+                .vue-bar,
+                .git-bar,
+                .react-bar {
+                    width: 36px;
+                    margin: 5px;
+                    height: 36px;
+                    border-radius: 50%;
+                }
 
-        .html-bar {
-            width: 100%;
-            background-color: $color-quaternaria;
-            border-radius: 4px;
-            height: 24px;
-            position: relative;
-            overflow: hidden;
-            &::before{
-                content: '';
-                width: 85%;
-                height: 24px;
-                position: absolute;
-                background-color: $color-primaria;
-            }
-            
-        }
-        .css-bar {
-            width: 100%;
-            background-color: $color-quaternaria;
-            border-radius: 4px;
-            height: 24px;
-            position: relative;
-            overflow: hidden;
-            &::before{
-                content: '';
-                width: 80%;
-                height: 24px;
-                position: absolute;
-                background-color: $color-primaria;
-            }
-            
-        }
-        .js-bar {
-            width: 100%;
-            background-color: $color-quaternaria;
-            border-radius: 4px;
-            height: 24px;
-            position: relative;
-            overflow: hidden;
-            &::before{
-                content: '';
-                width: 70%;
-                height: 24px;
-                position: absolute;
-                background-color: $color-primaria;
-            }
-            
-        }
-
-        .vue-bar {
-            width: 100%;
-            background-color: $color-quaternaria;
-            border-radius: 4px;
-            height: 24px;
-            position: relative;
-            overflow: hidden;
-            &::before{
-                content: '';
-                width: 65%;
-                height: 24px;
-                position: absolute;
-                background-color: $color-primaria;
+                .html-bar{
+                    background-color: $color-laranja;
+                    border: 2px solid $color-branca;
+                }
+                .css-bar{
+                    background-color: $color-azul;
+                    border: 2px solid $color-branca;
+                }
+                .js-bar{
+                    background-color: $color-amarelo;
+                    border: 2px solid $color-branca;
+                }
+                .vue-bar{
+                    background-color: $color-verde;
+                    border: 2px solid $color-branca;
+                }
+                .git-bar{
+                    background-color: $color-preto;
+                    border: 2px solid $color-branca;
+                }
+                .react-bar{
+                    border: 2px solid $color-branca;
+                    background-color: $color-azul-claro;
+                }
             }
         }
-        .git-bar {
-            width: 100%;
-            background-color: $color-quaternaria;
-            border-radius: 4px;
-            height: 24px;
-            position: relative;
-            overflow: hidden;
-            &::before{
-                content: '';
-                width: 70%;
-                height: 24px;
-                position: absolute;
-                background-color: $color-primaria;
-            }
-        }
-
-       
     }
 }
