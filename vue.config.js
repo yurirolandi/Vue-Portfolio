@@ -7,7 +7,7 @@ module.exports = {
     types.forEach(type => addStyleResource(config.module.rule('stylus').oneOf(type)))
   },
 
-  baseUrl:'/Vue-Portfolio',
+  // baseUrl:'/Vue-Portfolio',
   
   css: {
       loaderOptions: {
