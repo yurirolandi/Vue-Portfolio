@@ -1,16 +1,23 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="./components/Header/index.vue">index</router-link> |
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
+    <MyHeader />
     <router-view/>
+    <MyFooter />
   </div>
 </template>
 
+<script>
+
+import Header from './components/Header/index'
+import Footer from './components/Footer/index'
+export default {
+  components: {
+    MyHeader : Header,
+    MyFooter : Footer
+  }
+}
+</script>
+
 <style lang="scss">
 @import 'assets/scss/main';
-
-
 </style>

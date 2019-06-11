@@ -1,5 +1,6 @@
-@import 'mixins';
-@import 'variables';
+@import
+'mixins',
+'variables';
 
 *{
     box-sizing: border-box;
@@ -19,6 +20,7 @@ html {
         section.professional,
         section.portfolio{
             display: block;
+            height: 100vh;
         }
         section.contato{
             display: flex;

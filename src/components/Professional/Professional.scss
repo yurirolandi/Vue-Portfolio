@@ -1,4 +1,14 @@
 @import '../../assets/scss/main.scss';
 .professional {
-
+    background-color: $color-preto-claro;
+    .professional-titulo{
+        display: block;
+        font-size: 1.8em;
+        color: $color-primaria;
+        align-self: center;
+        width: fit-content;
+        padding: 10px;
+        border-bottom: 2px solid $color-branca;
+        font-family: Montserrat, sans-serif;
+    }
 }

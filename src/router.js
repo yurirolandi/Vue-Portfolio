@@ -1,10 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Contato from './components/Contato/index.vue'
+import Profissional from './components/Professional/index.vue'
+
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -12,24 +16,14 @@ export default new Router({
       component: Home
     },
     {
-      path: './components/Header',
-      name: 'header',
-      component: () => import('./components/Header/index.vue')
+      path: '/Contato',
+      name: 'contato',
+      component: Contato 
     },
     {
-      path: './components/About',
-      name: 'about',
-      component: () => import('./components/About/index.vue')
-    },
-    {
-      path: './components/About',
-      name: 'about',
-      component: () => import('./components/Contato/index.vue')
+      path: '/Profissional',
+      name: 'profissional',
+      component: Profissional
     }
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   component: () => import('./views/About.vue')
-    // }
   ]
 })
