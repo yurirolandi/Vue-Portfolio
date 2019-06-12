@@ -2,6 +2,7 @@
 
 ## DEV YURI ROLANDI
 
+
 ## Project setup
 ```
 npm install
@@ -21,13 +22,7 @@ npm run build
 ```
 npm run test
 ```
-
-### Lints and fixes files
-```
-npm run lint
-
-
-### O projeto conta com:
+## O projeto conta com:
 
 fortawesome
 vue
@@ -37,4 +32,11 @@ vuex
 sass
 node-sass
 sass-loader
+
+
+
+
+
+
+
 
