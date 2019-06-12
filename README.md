@@ -24,13 +24,13 @@ npm run test
 ```
 ## O projeto conta com:
 
-fortawesome
-vue
-vue-generate-component
-vue-router
-vuex
-sass
-node-sass
+fortawesome,
+vue,
+vue-generate-component,
+vue-router,
+vuex,
+sass,
+node-sass,
 sass-loader
 
 
