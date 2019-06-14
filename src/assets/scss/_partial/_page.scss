@@ -20,12 +20,13 @@ html {
         section.professional,
         section.portfolio{
             display: block;
-            height: auto;
+            height: 100vh;
         }
         section.contato{
             display: flex;
             flex-direction: column;
             padding: 40px;
+            height: auto;
         }
 
     }

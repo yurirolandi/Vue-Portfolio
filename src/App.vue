@@ -7,12 +7,12 @@
 </template>
 
 <script>
-import Header from './components/Header/index'
-import Footer from './components/Footer/index'
+import Top from './components/Top/index'
+import MyFooter from './components/MyFooter/index'
 export default {
   components: {
-    MyHeader : Header,
-    MyFooter : Footer
+    MyHeader : Top,
+    MyFooter : MyFooter
   }
 }
 </script>

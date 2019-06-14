@@ -1,5 +1,5 @@
 export default {
-  name: 'footer',
+  name: 'myfooter',
   components: {},
   props: [],
   data () {

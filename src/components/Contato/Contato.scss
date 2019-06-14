@@ -8,64 +8,26 @@
     background-size: cover;
     background-position: top;
 
-    .contato-form{
-        display: block;
-        text-align: center;
-        width: 85%;
-        font-family: roboto, sans-serif;
-        margin: 30px auto;
-        max-width: 500px;
-        background-color: $color-terciaria;
-        padding: 20px 30px;
-        border-radius: 8px;
-        box-shadow:  0 0 20px $color-preto; 
+  
+    .btn{
+    display: block;
+    background: $color-primaria;
+    cursor: pointer;
+    padding: 14px 0;
+    color: $color-branca;
+    margin-top: 20px;
+    width: 100%;
+    }
 
-        label {
-            display: block;
-            text-align: left;
-            width: fit-content;
-            color: $color-base;
-            font-size: 16px;
+    .size{
+        width: 50%;
+        align-self: center;
+        display: flex;
+
+        .titulo{
+            font-size: 1.5em;
         }
-
-        .contato-titulo{
-            margin-bottom: 20px;
-            font-weight: 700;
-            font-size: 1.8em;
-        }
-
-        .contato-texto{
-            border: 1px solid $color-preto;
-            margin: 8px 0;
-            padding: 5px;   
-            border-radius: 8px;
-
-          
-            input,
-            textarea{
-                width: 100%;
-                border: none;
-                background: none;
-                outline: none;
-                font-size: 16px;
-                margin-top: 6px;
-            }
-
-            textarea{
-                height: 100px;
-            }
-        }
-
-        .btn{
-            display: block;
-            background: $color-primaria;
-            cursor: pointer;
-            padding: 14px 0;
-            color: $color-branca;
-            margin-top: 8px;
-            width: 100%;
-        }
-
     }
 
 }
+
