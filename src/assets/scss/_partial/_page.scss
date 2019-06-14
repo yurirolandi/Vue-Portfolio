@@ -13,14 +13,14 @@ html {
     font-size: $browser-context;
     
     body {
-        font-family: roboto;
+        font-family: roboto, sans-serif;
 
         section.about,
         section.inicial,
         section.professional,
         section.portfolio{
             display: block;
-            height: 100vh;
+            height: auto;
         }
         section.contato{
             display: flex;
