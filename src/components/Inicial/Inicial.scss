@@ -1,17 +1,21 @@
 @import '../../assets/scss/main';
 
 .inicial {
-    background-image: url('../../assets/img/desenvolvedor-web.png');
+    background-image: url('../../assets/img/desenvolvedor-web.jpg');
     background-repeat: no-repeat;
-    height: 700px;
-    background-position: top;
+    background-position: center;
     background-size:cover;
     background-attachment: fixed;
 
+    display: flex;
+    height: 100vh;   
+
        .painel{
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             .painel-option{
-                padding: 150px 20px;
+                margin: 0 20px;
                 .option{
                     cursor: pointer;
                     position: relative;
@@ -52,6 +56,46 @@
                         
                 }
             }
+        }
+    }
+
+    .introducao-texto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 120px;
+
+        a{
+            text-decoration: none;
+            color: $color-branca;
+            text-align: center;
+            margin-top:10px; 
+            cursor: pointer;
+            font-family: Montserrat, sans-serif;
+            &:hover{
+                text-decoration: none;
+                color: $color-azul-claro;
+                cursor: pointer;
+            }
+            i{
+                margin: 0 5px;
+            }
+        }
+
+        .introducao-texto__nome{
+            font-size: 2.3em;
+            color: $color-laranja;
+            font-weight: 500;
+            word-break: break-word;
+            font-family: RobotoRegular, sans-serif;
+        }
+
+        .introducao-texto__apresentacao{
+            font-size: 1.6em;
+            word-break: break-word;
+            color: $color-branca;
+            font-weight: 200;
         }
     }
 

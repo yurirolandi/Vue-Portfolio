@@ -1,11 +1,13 @@
 @import '../../assets/scss/main.scss';
 
-.about {
+#about {
     background-color: $color-preto;
+    padding: 30px 0;
+    
     .about-container{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
 
         .about-titulo{
             display: block;
@@ -13,32 +15,35 @@
             color: $color-branca;
             align-self: center;
             width: fit-content;
-            margin-top: 60px;
+            margin: 60px 0;
             padding: 10px;
             border-bottom: 2px solid $color-branca;
-            font-family: Montserrat;
+            font-family: Montserrat, sans-serif;
         }
     }
 
     .about-conteudo{
             display: flex;
-            padding: 15px;
-            justify-content: center;
+            padding: 10px;
+            justify-content: space-around;
             flex-wrap: wrap;
 
         .about-conteiner{
             display: flex;
             flex-direction: column;
-            margin: 20px 0;
-            padding: 0 20px;
+            margin: 20px 0 20px 97px;
+            padding: 0 5px;
             justify-content: left;
-            width: 60%;
+            min-width: 425px;
+            width: 500px;
             
             .about-subtitulo{
                 font-size: 1.2em;
+                text-align: left;
+                align-self: left;
                 color: $color-branca;
                 margin-bottom: 10px;
-                font-family: roboto;
+                font-family: RobotoRegular, sans-serif;
             }
     
             .about-text{
@@ -46,13 +51,15 @@
                 text-align: left;
                 width: 70%;
                 color: $color-branca;
-                font-family: roboto;
-                line-height: 1.6;
+                font-family: RobotoRegular, sans-serif;
+                line-height: 1.6;            
+                text-align: justify;
             }
 
             .about-media{
                 display: block;
                 margin: 20px 0;
+            
 
                 .media-conteudo{
                     list-style: none;
@@ -73,7 +80,7 @@
                     a{
                         text-decoration: none;
                         color: $color-branca;
-                        font-family: Montserrat;
+                        font-family: Montserrat, sans-serif;
 
                         i{
                             font-size: 25px;
@@ -90,8 +97,11 @@
             flex-direction: column;
             justify-content: center;
             align-self: center;
+            flex-wrap: wrap;
             width: 400px;
+            max-width: 700px;
             height: 100%;
+            margin-bottom: 30px;
     
             .skill-titulo{
                 font-size: 1.5em;
@@ -109,22 +119,23 @@
                 font-size: 1.1em;
                 align-self: center;
                 margin: 12px 10px 10px 10px;
-                font-family: roboto;
+                font-family: robotoRegular, sans-serif;
             }
     
             .skill-box{
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
                 .skill-conteiner{
                     display: flex;
+                    align-items: center;
                     justify-content: space-between;
-                    flex-wrap: wrap;
                       
                     border: 2px solid $color-branca;
-                    border-radius: 50px;
+                    border-radius: 4px;
                     background-color: $color-base;
                     margin: 10px 5px 0 0;
-                    width: 48%;
+                    width: 190px;
                     padding: 5px 10px;
         
                     .html-bar, 
