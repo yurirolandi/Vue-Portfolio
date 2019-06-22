@@ -4,7 +4,7 @@
   </b-alert>
 
   <b-card class="size">
-    <span class="titulo">Contato</span>
+    <div class="titulo">Contato</div>
     <b-form-group label="Nome:">
       <b-form-input type="text" size="lg" v-model="usuario.nome" placeholder="Informe o Nome">
       </b-form-input>
@@ -24,7 +24,7 @@
     <hr>
 
     <b-button
-     @click="enviar" size="lg" variant="success" class="btn">Enviar
+     @click="enviar" size="lg" variant="success" class="btn" v-bind:disabled="!isValid">Enviar
     </b-button>
   </b-card>
 

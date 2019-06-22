@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import BootstrapVue from 'bootstrap-vue'
+import VeeValidate from 'vee-validate'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'   
@@ -23,6 +24,7 @@ import 'font-awesome/css/font-awesome.css'
 
 
 Vue.use(BootstrapVue)
+Vue.use(VeeValidate);
 
 library.add(faUserSecret)
 

@@ -13,7 +13,9 @@ export default {
     }
   },
   computed: {
-   
+    isValid: function () {
+      return this.name != '' && this.email != ''
+    }
   },
   methods: {
     enviar(){
