@@ -9,7 +9,7 @@
 
     display: flex;
     height: 100vh;   
-
+    
        .painel{
             display: flex;
             justify-content: center;
@@ -67,7 +67,10 @@
         margin-top: 120px;
 
         a{
+            width: 125px;
+            align-self: center;
             text-decoration: none;
+            border: 2px solid $color-laranja;
             color: $color-branca;
             text-align: center;
             margin-top:10px; 
@@ -75,11 +78,12 @@
             font-family: Montserrat, sans-serif;
             &:hover{
                 text-decoration: none;
-                color: $color-azul-claro;
+                color: $color-branca;
                 cursor: pointer;
+                background-color: $color-laranja;
             }
             i{
-                margin: 0 5px;
+                margin: 0 5px 0 0;
             }
         }
 

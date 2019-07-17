@@ -2,6 +2,7 @@
 @import '../../assets/scss/_partial/_typography';
 .footer {
     display: block;
+    padding: 5px;
     background-color: $color-base;
     height: 100px;
 
@@ -9,10 +10,13 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
 
         .footer-conteudo{
             display: flex;
             justify-content: center;
+            align-items: center;
             .footer-text{
                 color: $color-branca;
                 align-self: flex-end;
@@ -25,7 +29,7 @@
 
             .social-content{
                 list-style: none;
-                margin-top: 30px;
+                margin-top: 10px;
 
                 .social-item{
                     display: inline-block;
@@ -33,10 +37,10 @@
                     a{
                         color: $color-branca;
                         text-decoration: none;
-                        padding: 8px;
+                        padding: 10px;
                         font-family: Montserrat;
                         border: 2px solid $color-branca;
-                        border-radius: 13px;
+                        border-radius: 8px;
 
                         i{
                             font-size: 20px;
