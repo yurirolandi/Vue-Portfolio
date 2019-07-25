@@ -6,9 +6,9 @@ export default {
     return {
       mensagens: [],
       usuario: {
-        nome: '',
-        email: '',
-        texto: ''
+        nome: null,
+        email: null,
+        texto: null
       }
     }
   },
