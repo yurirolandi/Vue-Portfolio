@@ -4,7 +4,7 @@
     background-image: url('../../assets/img/desenvolvedor-web.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
 
     display: flex;
@@ -71,6 +71,7 @@
             align-self: center;
             text-decoration: none;
             border: 2px solid $color-laranja;
+            background-color: $color-laranja;
             color: $color-branca;
             text-align: center;
             margin-top:10px; 
@@ -79,6 +80,7 @@
             &:hover{
                 text-decoration: none;
                 color: $color-branca;
+                background-color: $color-azul;
                 cursor: pointer;
                 background-color: $color-laranja;
             }
@@ -103,5 +105,15 @@
         }
     }
 
-    
+
+    @media only screen and (max-width: 320px) {
+        .painel{
+            display: none;
+        }
+     }
+    @media only screen and (max-width: 480px) {
+        .painel{
+            display: none;
+        }
+    }    
 }
