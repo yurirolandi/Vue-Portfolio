@@ -22,8 +22,10 @@ html {
         section.contato{
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-content: center;
             padding: 40px;
-            height: auto;
+            height: 100vh;
         }
 
     }

@@ -7,28 +7,34 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
+    
+
+    img{
+        width: 500px;
+        margin-left: 400px;
+    }
 
   
-    .btn{
-    display: block;
-    background: $color-primaria;
-    cursor: pointer;
-    padding: 14px 0;
-    color: $color-branca;
-    margin-top: 20px;
-    width: 100%;
-    }
+    // .btn{
+    //     display: block;
+    //     background: $color-primaria;
+    //     cursor: pointer;
+    //     padding: 14px 0;
+    //     color: $color-branca;
+    //     margin-top: 20px;
+    //     width: 100%;
+    // }
 
-    .size{
-        width: 50%;
-        align-self: center;
-        display: flex;
+    // .size{
+    //     width: 50%;
+    //     align-self: center;
+    //     display: flex;
 
-        .titulo{
-            font-size: 1.8em;
-            text-align: center;
-        }
-    }
+    //     .titulo{
+    //         font-size: 1.8em;
+    //         text-align: center;
+    //     }
+    // }
 
 }
 
