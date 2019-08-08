@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
-    flex-direction: row;
+    flex-direction: row;    
     flex-wrap: wrap;
     height: 100vh;
 
@@ -18,21 +18,11 @@
        padding: 10px;
        max-width: 500px;
        width: 270px;
-       &__icone{
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           border: 2px solid $color-branca;
-           border-radius: 8px;
-           width:80px;
-           height:60px;
-           margin: 56px 0;
-           i{
-               color: $color-branca;
-               font-size: 30px;
-               padding: 20px;
-           }
-        }
+       h1{
+        color: $color-branca;
+        margin-top: 120px;
+       }
+       
         &__linha{
             height: 36px;
             width: 270px;
@@ -41,10 +31,22 @@
 
         &__informacao{
             margin: 0;
-            h1, p{
+            p{
                 margin: 0;
                 color: $color-branca;
             }
+
+            .conteudo__icone{
+                display: flex;
+                justify-content: center;
+                align-items: center;      
+               
+                i{
+                    color: $color-branca;
+                    font-size: 30px;
+                    padding: 20px;
+                }
+             }
         }
 
         .azul{
