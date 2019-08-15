@@ -1,6 +1,13 @@
+
+import painel from '../templats/Painel';
+import TextoIntroducao from '../templats/TextoIntro';
 export default {
   name: 'inicial',
-  components: {},
+  components: {
+    painel,
+    TextoIntroducao
+
+  },
   props: [],
   data () {
     return {
