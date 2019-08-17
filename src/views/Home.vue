@@ -2,6 +2,7 @@
   <div class="home">
     <Inicial />
     <About />
+    <Contato />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 
 import Inicial from '../components/Inicial/index.vue';
 import About from '../components/About/index.vue';
+import Contato from '../views/Contato/index.vue';
 
 
 export default {
   name: 'home',
   components: {
     Inicial,
-    About
+    About,
+    Contato
   }
 }
 </script>

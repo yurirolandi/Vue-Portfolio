@@ -1,4 +1,5 @@
+
 export default {
-  name: 'top',
-  
+  name: 'top'
+
 }

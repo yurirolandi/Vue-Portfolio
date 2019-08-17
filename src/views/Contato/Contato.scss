@@ -1,40 +1,28 @@
 @import '../../assets/scss/main.scss';
 @import '../../assets/scss/_partial/_variables';
-.contato {
+#contato {
     background-image: url('../../assets/img/contato.jpg');
     background-repeat: no-repeat;
-    height: 600px;
+    height: 100vh;
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
+    padding: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
     
-
-    img{
+    .contato__formulario{
+        background-color: $color-base;
+        color: $color-branca;
+        padding: 10px;
         width: 500px;
-        margin-left: 400px;
+        border-radius: 8px;    
     }
-
-  
-    // .btn{
-    //     display: block;
-    //     background: $color-primaria;
-    //     cursor: pointer;
-    //     padding: 14px 0;
-    //     color: $color-branca;
-    //     margin-top: 20px;
-    //     width: 100%;
-    // }
-
-    // .size{
-    //     width: 50%;
-    //     align-self: center;
-    //     display: flex;
-
-    //     .titulo{
-    //         font-size: 1.8em;
-    //         text-align: center;
-    //     }
-    // }
 
 }
 

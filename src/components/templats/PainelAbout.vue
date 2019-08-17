@@ -75,7 +75,7 @@ export default {
 @import '../../assets/scss/main';
 .about-conteudo {
     display: flex;
-    padding: 10px;
+    padding-bottom: 90px !important;
     justify-content: space-around;
     flex-wrap: wrap;
 

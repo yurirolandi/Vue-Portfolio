@@ -6,7 +6,7 @@ import Home from './views/Home.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'history',  
   routes: [
     {
       path: '/',
@@ -14,14 +14,14 @@ export default new Router({
       component: Home
     },
     {
-      path: '/Contato',
-      name: 'contato',
-      component: () => import('./views/Contato/index.vue') 
-    },
-    {
       path: '/Profissional',
       name: 'profissional',
       component: () => import('./views/Professional/index.vue')
+    },
+    {
+      path: '/contato',
+      name: 'contato',
+      component: () => import('./views/Contato/index.vue')
     }    
   ]
 })
