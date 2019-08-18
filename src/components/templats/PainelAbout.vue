@@ -1,7 +1,7 @@
 <template>
       <div class="about-conteudo">
 
-    <div class="about-conteiner">
+    <div class="about-conteiner" data-aos="slide-right">
       <h3 class="about-subtitulo">
        {{ titulo }}
       </h3>
@@ -25,33 +25,33 @@
       </h2>
 
       <div class="skill-box">
-        <div class="skill-conteiner">
+        <div class="skill-conteiner" data-aos="fade-right">
           <h4 class="skill-item">Html</h4>
           <div class="html-bar"><img src="../../assets/svgs/html5-brands.svg"></div>
 
         </div>
 
-        <div class="skill-conteiner">
+        <div class="skill-conteiner" data-aos="fade-left">
           <h4 class="skill-item">Css</h4>
           <div class="css-bar"><img src="../../assets/svgs/css3-alt-brands.svg"></div>
         </div>
         
-        <div class="skill-conteiner">
+        <div class="skill-conteiner" data-aos="fade-right">
           <h4 class="skill-item">JavaScript</h4>
           <div class="js-bar"><img src="../../assets/svgs/js-square-brands.svg"></div>
         </div>
 
-        <div class="skill-conteiner">
+        <div class="skill-conteiner" data-aos="fade-left">
           <h4 class="skill-item">Vue.Js</h4>
           <div class="vue-bar"><img src="../../assets/svgs/vuejs-brands.svg"></div>
         </div>
 
-        <div class="skill-conteiner">
+        <div class="skill-conteiner" data-aos="fade-right">
           <h4 class="skill-item">Git</h4>
           <div class="git-bar"><img src="../../assets/svgs/github-brands.svg"></div>
         </div>
 
-        <div class="skill-conteiner">
+        <div class="skill-conteiner" data-aos="fade-left">
           <h4 class="skill-item">React</h4>
           <div class="react-bar"><img src="../../assets/svgs/react-brands.svg"></div>
         </div>

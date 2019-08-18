@@ -21,6 +21,10 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '@fortawesome/free-solid-svg-icons/index'
 import 'font-awesome/css/font-awesome.css'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 
 Vue.use(BootstrapVue)
 

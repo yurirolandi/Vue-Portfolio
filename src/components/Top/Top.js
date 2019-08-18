@@ -1,5 +1,8 @@
-
+import NavHamburguer from '../templats/NavHamgurguer';
 export default {
-  name: 'top'
+  name: 'top',
+  components: {
+    NavHamburguer 
+  }
 
 }

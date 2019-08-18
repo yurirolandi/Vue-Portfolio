@@ -95,7 +95,7 @@ export default {
       .introducao-texto {
         padding: 15px;
         height: auto;
-        width: 350px;
+        width: 325px;
       }
     }
       
@@ -109,7 +109,7 @@ export default {
       .introducao-texto {
         padding: 15px;
         height: auto;
-        width: 400px;
+        width: 350px;
       }
     }
     }
