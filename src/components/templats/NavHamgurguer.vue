@@ -1,84 +1,92 @@
 <template>
-  <nav class="menu-mobile">
-    <Slide>
-      <ul class="mobile-box">
-        <router-link tag="li" to="/" class="header-item">
-          <a>Home</a>
-        </router-link>
-        <router-link tag="li" to="/profissional" class="header-item">
-          <a>Profissional</a>
-        </router-link>
-        <router-link tag="li" to="/" class="header-item">
-          <a>Portfólio</a>
-        </router-link>
-        <router-link tag="li" to="/contato" class="header-item">
-          <a>Contato</a>
-        </router-link>
+  <div class="menu-mobile">
+    <transition name="fade" mode="out-in">
+      <i class="fa fa-bars" id="icone-hamburguer" aria-hidden="true" v-if="!show" @click="show = !show" 
+        key="menu"></i>
+      <i class="fa fa-times" id="icone-hamburguer"
+      aria-hidden="true"
+        v-else  @click="show = !show" key="clear"
+      ></i>      
+    </transition>
+    <transition name="fade" mode="out-in">
+      <ul v-if="show" class="burguer-conteudo">
+          <router-link tag="li" to="/" class="burguer-item"><a><i class="fa fa-home"></i>Home</a></router-link>
+          <router-link tag="li" to="/profissional" class="burguer-item"><a><i class="fa fa-address-card"></i>Profissional</a></router-link>
+          <router-link tag="li" to="/" class="burguer-item"><a><i class="fa fa-grav"></i>Portfólio</a></router-link>
+          <router-link tag="li" to="/contato" class="burguer-item"><a><i class="fa fa-envelope"></i>Contato</a></router-link>
       </ul>
-    </Slide>
-  </nav>
+    </transition>
+  </div>
+
+
+
+      
+     
+
 </template>
 
+
+
 <script>
-import { Slide } from "vue-burger-menu";
 export default {
-  components: {
-    Slide
-  }
+  name: 'NavHamburguer',
+  data() {
+    return {      
+      show: false
+    }
+  },
+ 
 };
 </script>
 
 <style lang="scss">
 @import "../../assets/scss/main";
-
-
-  .mobile-box {   
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    .header-item {
-      margin: 15px 0;
+.menu-mobile{
+  #icone-hamburguer{
+      color: #fff;
+      height: 30px;
+      font-size: 2em;
       cursor: pointer;
-      a {
-        color: $color-branca;
-        i {
-          margin: 0 5px;
+      margin: 10px;
+    }
+    .burguer-conteudo{
+      margin: 0 10px;
+      list-style: none;
+      .burguer-item{
+        margin: 10px 0;
+        &:last-of-type{
+          margin: 0; 
+        }
+        a{
+        text-decoration: none;
+          i{
+            margin: 0 10px;
+          }
+          cursor: pointer;
+          color: $color-branca;
+          padding: 10px 0;
+          &:hover{
+            color: $color-azul-claro;
+          }
         }
       }
     }
-  }
-  .bm-menu {
-   
-    background-color: $color-base;
-    height: 100%;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 60px;
-    position: fixed;
-    top: 0;
-    transition: 0.3s ease-out;
-    width: 0;
-    z-index: 1000;
-  }
 
-  .bm-burger-button {
-   
-    cursor: pointer;
-    left: 36px;
-    position: absolute;
-    top: 20px;
-    width: 36px;
-    height: 30px;
-  }
-
-  .bm-burger-bars {   
-    background-color: $color-branca;
-  }
-
-    @media screen and (min-width: 780px) {
-     .bm-burger-button {
-        display: none;
+    .fade-enter-active,
+    .fade-leave-to {
+      transition: opacity .2s ease;
     }
-  }
 
+    .fade-enter,
+    .fade-leave-to{
+      opacity: 0;
+    }
+}
+
+@media screen and (min-width: 780px) {
+  .menu-mobile {
+    display: none;
+    
+  }
+}
 </style>
