@@ -42,18 +42,24 @@ export default {
 <style lang="scss">
 @import "../../assets/scss/main";
 .menu-mobile{
+  position: absolute;
+  background-color: $color-base;
+  transition: 0.7s ease;
+  padding: 10px 0;
+  width: 100%;
+  z-index: 100;
   #icone-hamburguer{
-      color: #fff;
-      height: 30px;
+      color: #fff;     
       font-size: 2em;
       cursor: pointer;
-      margin: 10px;
+      padding: 10px;
     }
     .burguer-conteudo{
       margin: 0 10px;
       list-style: none;
+      text-align: center;
       .burguer-item{
-        margin: 10px 0;
+        padding: 10px 0;
         &:last-of-type{
           margin: 0; 
         }
